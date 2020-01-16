@@ -20,7 +20,7 @@ class SpockTest extends Specification{
         spock.helloWorld()
     }
 
-    def "fizzBuzz" (){
+    def "fizz" (){
         given:
         FizzBuzz subjectUnderTest = new FizzBuzz()
 
