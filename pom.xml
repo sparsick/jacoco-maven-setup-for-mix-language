@@ -79,8 +79,8 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>addSources</goal>
-                            <goal>addTestSources</goal>
+                            <goal>addSources</goal> <!-- important for jacoco that it recognizes to measure the coverage of classes in src/main/groovy-->
+                            <goal>addTestSources</goal> <!-- important for jacoco that it recognizes to use tests in src/test/groovy for coverage measuring-->
                             <goal>compile</goal>
                             <goal>compileTests</goal>
                         </goals>
@@ -98,7 +98,6 @@
                             <goal>compile</goal>
                         </goals>
                     </execution>
-
                     <execution>
                         <id>test-compile</id>
                         <goals>
@@ -120,7 +119,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/main/kotlin</source>
+                                <source>src/main/kotlin</source> <!-- important for jacoco that it recognizes to measure the coverage of these classes-->
                             </sources>
                         </configuration>
                     </execution>
@@ -132,7 +131,7 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/test/kotlin</source>
+                                <source>src/test/kotlin</source> <!-- important for jacoco that it recognizes to use these test for coverage measuring-->
                             </sources>
                         </configuration>
                     </execution>
@@ -149,8 +148,8 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>prepare-agent</goal>
-                            <goal>report</goal>
+                            <goal>prepare-agent</goal> <!-- add javaagent to surefire's test run  -->
+                            <goal>report</goal> <!-- optional option for generation test coverage report in html -->
                         </goals>
                     </execution>
                 </executions>
