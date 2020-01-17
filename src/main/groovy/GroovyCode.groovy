@@ -1,4 +1,4 @@
-class Spock {
+class GroovyCode {
     String helloWorld(){
         "hello World"
     }

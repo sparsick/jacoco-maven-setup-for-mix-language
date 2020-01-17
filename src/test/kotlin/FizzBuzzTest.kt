@@ -14,7 +14,7 @@ class FizzBuzzTest {
 
     @Test
     fun helloWorld() {
-        val subjectUnderTest = Kotlin()
+        val subjectUnderTest = KotlinCode()
 
         val result: String = subjectUnderTest.helloWorld()
 

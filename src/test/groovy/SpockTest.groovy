@@ -15,7 +15,7 @@ class SpockTest extends Specification{
 
     def "helloWorld" (){
         setup:
-        Spock spock = new Spock()
+        GroovyCode spock = new GroovyCode()
 
         spock.helloWorld()
     }
