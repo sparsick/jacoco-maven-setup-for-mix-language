@@ -11,15 +11,15 @@
     <properties>
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.jupiter.version>5.5.2</junit.jupiter.version>
-        <kotlin.version>1.3.61</kotlin.version>
+        <junit.jupiter.version>5.7.0-M1</junit.jupiter.version>
+        <kotlin.version>1.3.72</kotlin.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy</artifactId>
-            <version>2.5.8</version>
+            <version>3.0.4</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
@@ -39,13 +39,13 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.14.0</version>
+            <version>3.16.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
-            <version>1.3-groovy-2.5</version>
+            <version>2.0-M2-groovy-3.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -75,7 +75,7 @@
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.8.1</version>
+                <version>1.9.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -109,7 +109,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.0</version>
                 <executions>
                     <execution>
                         <id>add-source</id>
@@ -139,17 +139,17 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.0.0-M4</version>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.3</version>
+                <version>0.8.5</version>
                 <executions>
                     <execution>
                         <goals>
                             <goal>prepare-agent</goal> <!-- add javaagent to surefire's test run  -->
-                            <goal>report</goal> <!-- optional option for generation test coverage report in html -->
+                            <goal>report</goal> <!-- optional option for generation test coverage report in html. Also needed by Sonarqube to show the test coverage in the dashboard -->
                         </goals>
                     </execution>
                 </executions>
