@@ -1,4 +1,4 @@
-public class FizzBuzz {
+public class JavaCode {
     public String fizzBuzz(int number) {
         if (number <1 ) {
             return "zu klein!!!";

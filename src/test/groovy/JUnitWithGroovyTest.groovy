@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test
 
-class JunitTest {
+class JUnitWithGroovyTest {
 
     @Test
     void "test"() {

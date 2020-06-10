@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class BasicTest {
+class JUnitWithJavaTest {
 
     @Test
     void testBuzz(){
-        FizzBuzz subjectUnderTest = new FizzBuzz();
+        JavaCode subjectUnderTest = new JavaCode();
 
         String result = subjectUnderTest.fizzBuzz(5);
 
@@ -16,17 +16,8 @@ class BasicTest {
     }
 
     @Test
-    void testFizzBuzz(){
-        FizzBuzz subjectUnderTest = new FizzBuzz();
-
-        String result = subjectUnderTest.fizzBuzz(15);
-
-        assertThat(result).isEqualTo("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz");
-    }
-
-    @Test
     void testOutOfRangeLeftSide(){
-        FizzBuzz subjectUnderTest = new FizzBuzz();
+        JavaCode subjectUnderTest = new JavaCode();
 
         String result = subjectUnderTest.fizzBuzz(0);
 
@@ -35,7 +26,7 @@ class BasicTest {
 
     @Test
     void testOutOfRangeRightSide(){
-        FizzBuzz subjectUnderTest = new FizzBuzz();
+        JavaCode subjectUnderTest = new JavaCode();
 
         String result = subjectUnderTest.fizzBuzz(101);
 

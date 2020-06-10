@@ -22,7 +22,7 @@ class SpockTest extends Specification{
 
     def "fizz" (){
         given:
-        FizzBuzz subjectUnderTest = new FizzBuzz()
+        JavaCode subjectUnderTest = new JavaCode()
 
         when:
         def result = subjectUnderTest.fizzBuzz(3)
